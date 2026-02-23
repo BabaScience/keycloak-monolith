@@ -1,0 +1,20 @@
+{
+  "name": "keycloak-monolith",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monolith skeleton with backend, frontend, and Keycloak",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w frontend",
+    "build": "npm run build -w backend && npm run build -w frontend",
+    "build:backend": "npm run build -w backend",
+    "build:frontend": "npm run build -w frontend"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
